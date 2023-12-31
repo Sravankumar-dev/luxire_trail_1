@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <link rel="stylesheet" href="../owls/owl.carousel.min.css">
+    <link rel="stylesheet" href="../owls/owl.theme.default.min.css">
+
+    <!-- javascript -->
+    <script src="../owls/jquery.min.js"></script>
+    <script src="../owls/owl.carousel.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css"
+        integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,600&family=Poppins:wght@100;300;400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Noto Sans', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 0.5px;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        .bottom_links {
+            list-style-type: none;
+            color: black;
+            text-decoration: none;
+        }
+
+        .bottom_links:hover {
+            margin-bottom: 1px solid black;
+            text-decoration: underline;
+        }
+
+        .bottom_links_list {
+            list-style-type: none;
+        }
+
+        .bottom_links_list a {
+            list-style-type: none;
+            text-decoration: none;
+            color: black;
+            padding: 5px 0px;
+            font-weight: 300;
+
+        }
+
+        .bottom_links_list a:hover {
+            text-decoration: underline;
+        }
+
+        .all_pants_ {
+            text-decoration: underline !important;
+        }
+
+        @media screen and (min-width:660px) {
+            .navbar-collapse {
+                justify-content: end !important;
+            }
+
+            .main_logo {
+                padding-left: 9%;
+            }
+
+            .main_logo_2 {
+                padding-left: 4%;
+            }
+
+            .bottom_line {
+                width: 95%;
+            }
+
+        }
+
+        @media screen and (max-width:660px) {
+            .icons {
+                text-align: center !important;
+            }
+
+            .main_logo_2 {
+                padding-left: 4%;
+                width: 30%;
+            }
+
+            .main_logo {
+                width: 50%;
+            }
+
+            .navbar-toggler-icon {
+                font-size: small;
+            }
+
+            .img {
+                width: 30%;
+            }
+
+            * {
+                font-size: small;
+            }
+
+            .bottom_text {
+                text-align: center !important;
+                margin-left: 25px;
+            }
+
+        }
+
+        p b {
+            font-weight: 800;
+        }
+
+        .icon {
+            font-size: 25px;
+            margin-right: 20px;
+        }
+
+        .wd {
+            margin: 0;
+            width: 95%;
+        }
+
+        .row_container {
+            background-color: lightgray;
+            padding: 50px 25px 60px;
+
+        }
+
+
+        #demos {
+            width: 80%;
+            margin: auto;
+        }
+
+        .item {
+            height: 40vh;
+        }
+
+        .rib {
+            position: relative;
+        }
+
+        .ribbon-wrapper {
+            width: 85px;
+            height: 88px;
+            overflow: hidden;
+            position: absolute;
+            top: -3px;
+            left: -3px;
+        }
+
+        .ribbon {
+            font: bold 12px sans-serif;
+            color: #333333;
+            text-align: center;
+            transform: rotate(-45deg);
+            position: relative;
+            padding: 4px 0;
+            top: 20px;
+            left: -30px;
+            width: 125px;
+            background-color: rgba(126, 36, 111, 255);
+            color: #fff;
+        }
+
+        .text a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .text a:hover {
+
+            text-decoration: underline;
+        }
+
+        p span i {
+            font-size: 75%;
+            padding: 1%;
+        }
+        .nav-link:hover {
+            border-bottom: 2px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid" style="padding: 0;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../home.html">
+                    <img src="../images/Luxire_logo.webp" class="main_logo" alt="main-logo">
+                </a>
+                <img src="../images/10years_logo.webp" alt="main-logo" class="main_logo_2">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" style="text-align: start;" id="navbarNavAltMarkup">
+
+                    <div class="navbar-nav fs-5">
+                        <a class="nav-link" href="#">Shop</a>
+                        <a class="nav-link" href="../header_links/on_sale.html">On-Sale</a>
+                        <a class="nav-link" href="../header_links/gift_cart.html">Gift</a>
+                        <a class="nav-link" href="../header_links/my_account.html">My Account</a>
+                    </div>
+
+                    <div class="pr-5">
+                       <a href="Search.html" class="text-dark p-0"><i class="fa-solid fa-magnifying-glass icon"></i></a> 
+                       <a href="../header_links/your_cart.html" class="text-dark p-0"><i class="fa-solid fa-bag-shopping icon"></i></a> 
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </nav>
+
+        <div class="row m-3 pt-4">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/1.webp" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                            <p> <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star-half-stroke"></i></span>(4)
+                            </p>
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/2.webp" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                            <p> <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>(4)
+                            </p>
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/3.jpg" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                           
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/4.webp" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                            <p> <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star-half-stroke"></i></span>(4)
+                            </p>
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/5.webp" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                            <p> <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>(4)
+                            </p>
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/7.webp" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                           
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/8.webp" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                            <p> <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star-half-stroke"></i></span>(4)
+                            </p>
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/9.jpg" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                            <p> <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>(4)
+                            </p>
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/10.webp" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                           
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/11.jpg" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                            <p> <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star-half-stroke"></i></span>(4)
+                            </p>
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/12.jpg" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                            <p> <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>(4)
+                            </p>
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/6.webp" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                           
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/13.webp" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                            <p> <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star-half-stroke"></i></span>(4)
+                            </p>
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/14.webp" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                            <p> <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>(4)
+                            </p>
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/15.jpg" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                           
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/16.webp" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                            <p> <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star-half-stroke"></i></span>(4)
+                            </p>
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/17.webp" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                            <p> <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>(4)
+                            </p>
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/18.webp" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                           
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/19.webp" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                            <p> <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star-half-stroke"></i></span>(4)
+                            </p>
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/20.webp" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                            <p> <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>(4)
+                            </p>
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/21.webp" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                           
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/22.jpg" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                            <p> <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star-half-stroke"></i></span>(4)
+                            </p>
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/23.jpg" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                            <p> <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>(4)
+                            </p>
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="rib m-3">
+                    <div class="li-div p-2 text-center border">
+                        <a href="../product-detail-page/product-detail-page.html">
+                            <img src="../all_pants/24.jpg" width="100%" />
+                        </a>
+                    </div>
+                    <div class="text text-center">
+                        <a href="#">
+                            <p class="pt-2">Light Tan Twill Chinos</p>
+                           
+                            <p>$189.99 USD<del class="p-2 text-danger"> $239.99 USD</del></p>
+                        </a>
+                    </div>
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon">SALE</div>
+                    </div>
+                </div>
+            </div>         
+        </div>
+        <div class="row mt-5 m-2">
+            <div class="col-12">
+                <h4 class="mb-3">Luxire On Instagram</h4>
+                <section id="demos">
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <img src="../insta_img/1.jpg" alt="insta_image">
+                                </div>
+                                <div class="item">
+                                    <img src="../insta_img/2.jpg" alt="insta_image">
+                                </div>
+                                <div class="item">
+                                    <img src="../insta_img/3.jpg" alt="insta_image">
+                                </div>
+                                <div class="item">
+                                    <img src="../insta_img/4.jpg" alt="insta_image">
+                                </div>
+                                <div class="item">
+                                    <img src="../insta_img/5.jpg" alt="insta_image">
+                                </div>
+                                <div class="item">
+                                    <img src="../insta_img/6.jpg" alt="insta_image">
+                                </div>
+                                <div class="item">
+                                    <img src="../insta_img/7.jpg" alt="insta_image">
+                                </div>
+                                <div class="item">
+                                    <img src="../insta_img/8.jpg" alt="insta_image">
+                                </div>
+                                <div class="item">
+                                    <img src="../insta_img/9.jpg" alt="insta_image">
+                                </div>
+                                <div class="item">
+                                    <img src="../insta_img/10.jpg" alt="insta_image">
+                                </div>
+                                <div class="item">
+                                    <img src="../insta_img/11.jpg" alt="insta_image">
+                                </div>
+                                <div class="item">
+                                    <img src="../insta_img/12.jpg" alt="insta_image">
+                                </div>
+                            </div>
+                            <script>
+                                $(document).ready(function () {
+                                    var owl = $('.owl-carousel');
+                                    owl.owlCarousel({
+                                        items: 4,
+                                        loop: true,
+                                        margin: 10,
+                                        autoplay: true,
+                                        autoplayTimeout: 1000,
+                                        autoplayHoverPause: true
+                                    });
+                                    $('.play').on('click', function () {
+                                        owl.trigger('play.owl.autoplay', [1000])
+                                    })
+                                    $('.stop').on('click', function () {
+                                        owl.trigger('stop.owl.autoplay')
+                                    })
+                                })
+                            </script>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+
+
+            <script src="../owls/highlight.js"></script>
+            <script src="../owls/app.js"></script>
+        </div>
+        <div class="row m-1 mt-4">
+            <div class="col-md-3">
+                <img src="../images/Luxire_logo_bottom.webp" class="main_logo mb-3" alt="main-logo">
+
+                <ul class="bottom_links_list">
+                    <li class="mb-2">
+                        <a href="our_story.html">Our story</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="Shipping&Returns.html">Shipping & Returns</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="Quality&Satisfaction.html">Quality & Satisfaction</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="Custome_fit.html">Custom-Fit</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="bottom_links_list text-start">
+                    <h5 class="pb-3">Information</h5>
+                    <li class="mb-2">
+                        <a href="Search.html">Search</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="about_us.html">About us</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="privacy_policy.html">Privacy Policy</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="faqs.html">FAQs</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="contact_us.html">Contact Us</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="how_to_order.html">How to Order</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="Custome_fit.html">Made-To-Fit</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="terms_of_services.html">Terms of Service</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="refund_policy.html">Refund policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="bottom_links_list">
+                    <h5 class="pb-3">Measure</h5>
+                    <li class="mb-2">
+                        <a href="pant_measurement.html">Pant Measurements</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="body_measure_pant.html">Body Measurement - Pants</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="measure_ur_shirt.html">Measure your Shirt</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="body_measure_shirt.html">Body Measurement - Shirt</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="send_measure_sample.html">Send Measurement Sample</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="pant_size_chart.html">Pant Size Chart</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="shirt_size_chart.html">Shirt Size Chart</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-md-3">
+                <ul class="bottom_links_list">
+                    <h5 class="pb-3">Styles</h5>
+                    <li class="mb-2">
+                        <a href="shirts.html" >Shirts</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="pants.html">Pants</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="our_collars.html">our Collars</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="all_shirts.html" >All Shirts</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="all_pants.html"class="all_pants_">All Pants</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <hr>
+        </div>
+        <div class="row mb-2 bottom_line">
+            <div class="col-md-10 text-center bottom_text">
+                <p class="bottom_text ml-2">@2023,<a href="" class="bottom_links">Luxire Custom Clothing.</a>Trademarks
+                    and brands are the
+                    properly of their respective owners.</p>
+            </div>
+            <div class="col-md-2 icons">
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FLuxire_com" class="text-dark"> <i
+                        class="fa-brands fa-twitter fs-5 p-2"></i></a>
+                <a href="https://www.facebook.com/Luxire/" class="text-dark"> <i
+                        class="fa-brands fa-square-facebook fs-5 p-2"></i></a>
+                <a href="https://www.instagram.com/luxire_com/" class="text-dark"> <i
+                        class="fa-brands fa-instagram fs-5 p-2"></i></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

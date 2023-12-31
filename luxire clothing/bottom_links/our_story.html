@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,100&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    * {
+      font-family: "Poppins", sans-serif;
+      letter-spacing: 0.5px;
+    }
+
+    p {
+      margin-bottom: 0 !important;
+      font-weight: 400 !important;
+    }
+
+    .wd {
+      width: 95%;
+      margin: auto;
+    }
+
+    .div {
+      border-bottom: 1px solid gainsboro;
+    }
+
+    .logo1 {
+      width: 20%;
+    }
+
+    .logo1 img {
+      width: 100%;
+    }
+
+    .ann {
+      width: 8%;
+    }
+
+    .humber {
+      padding-left: 30%;
+    }
+
+    @media screen and (max-width: 650px) {
+      .humber {
+        padding-left: 3%;
+      }
+
+      .logo1 {
+        width: 40%;
+      }
+
+      .ann {
+        width: 25%;
+      }
+
+      .main_logo_2 {
+        padding-left: 4%;
+        width: 30%;
+      }
+
+      .main_logo {
+        width: 50%;
+      }
+
+      .navbar-toggler-icon {
+        font-size: small;
+      }
+    }
+
+    @media screen and (min-width:650px) {
+      .navbar-collapse {
+        justify-content: end !important;
+      }
+      .main_logo{
+                padding-left: 9%;
+            }
+      .main_logo_2 {
+        padding-left: 4%;
+      }
+    }
+    .icon {
+            font-size: 25px;
+            margin-right: 20px;
+        }
+
+    .drp-itm a {
+      text-align: center;
+
+
+    }
+
+    .drp-itm a:hover {
+      opacity: 0.8;
+    }
+
+    .dis {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      padding: 15px;
+    }
+
+    .ta {
+      width: 95%;
+      margin: auto;
+      font-weight: 380;
+    }
+
+    .prm {
+      margin: 8vw auto 2vw;
+    }
+
+    .story {
+      text-decoration: underline !important;
+    }
+
+    .detailer div {
+            font-size: small;
+            padding-left: 5%;
+        }
+
+    .detailer p,
+    .detailer img {
+      display: inline-block;
+    }
+
+    .detailer p {
+      padding-left: 2%;
+    }
+
+    .infor {
+      padding: 3% 0;
+      background-color: rgb(235, 235, 235);
+    }
+
+    .mgn {
+      width: 95%;
+      margin: auto;
+    }
+
+    .you {
+      background-color: white;
+      height: 100%;
+      padding: 5%;
+    }
+
+    .you p {
+      font-weight: 380;
+      font-size: small;
+    }
+
+    .ftr {
+      padding-bottom: 3%;
+    }
+
+    .ftr a {
+      color: rgb(130, 130, 130);
+      text-decoration: none;
+      display: block;
+      padding: 5px 0px;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+
+    .ftr a:hover {
+      text-decoration: underline;
+    }
+
+    .hr {
+      margin: 20px 0px;
+    }
+
+    .cpy {
+      width: 90%;
+      margin: 3% auto;
+    }
+
+    .cpy p:nth-child(1) {
+      font-weight: lighter;
+    }
+
+    .cpy p:nth-child(2) {
+      text-align: center;
+    }
+
+    .cpy i {
+      padding: 5%;
+    }
+
+    .bottom_links {
+      list-style-type: none;
+      color: black;
+      text-decoration: none;
+    }
+
+
+    .bottom_links:hover {
+      margin-bottom: 1px solid black;
+      text-decoration: underline;
+    }
+    .nav-link:hover {
+            border-bottom: 2px solid black;
+        }
+  </style>
+
+</head>
+
+<body>
+  <div class="container-fluid mt-2"  style="padding: 0;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="../home.html">
+              <img src="../images/Luxire_logo.webp" class="main_logo" alt="main-logo">
+          </a>
+          <img src="../images/10years_logo.webp" alt="main-logo" class="main_logo_2">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" style="text-align: start;" id="navbarNavAltMarkup">
+
+              <div class="navbar-nav fs-5">
+                  <a class="nav-link" href="#">Shop</a>
+                  <a class="nav-link" href="../header_links/on_sale.html">On-Sale</a>
+                  <a class="nav-link" href="../header_links/gift_cart.html">Gift</a>
+                  <a class="nav-link" href="../header_links/my_account.html">My Account</a>
+              </div>
+
+              <div class="pr-5">
+                 <a href="Search.html" class="text-dark p-0"><i class="fa-solid fa-magnifying-glass icon"></i></a> 
+                 <a href="../header_links/your_cart.html" class="text-dark p-0"><i class="fa-solid fa-bag-shopping icon"></i></a> 
+              </div>
+
+
+          </div>
+
+
+      </div>
+  </nav>
+
+    <div class="row ta mt-5">
+      <p>Since 2012, Luxire has been making made-to-measure clothing for men across 60 countries.</p>
+      <p class="mt-5">These men prefer Luxire because:</p>
+      <p class="mt-4">
+        1.<b> Perfect fitting: </b>Each garment is made to the customer's measurements and hence fits well. We work with
+        you to shape the garment to your body. You thus get the best fitting possible.
+      </p>
+      <p class="mt-3">
+        2.<b> Styled for you: </b>We style the garment to your needs, to your body, to your lifestyle. If you sit at a
+        computer all day, we will add some room to the sleeves and back for better movement and comfort. You wear your
+        watch on the right hand, we will add extra room in your right cuff.
+      </p>
+      <p class="mt-3">
+        3.<b> Highest Quality: </b>Take a Luxire garment to the best tailor on Saville Row and he will only admire our
+        work. Luxire uses the best trims from European mills, hron/mother-of-pearl buttons and best fabrics from
+        British/Italian/Swiss mills.
+      </p>
+      <p class="mt-3">
+        4.<b> Human Customer Service: </b>We are tailors and we understand clothing. Your mails are replied to by people
+        who understand clothing. Who are either trained fashion designers or who have worked in tailoring. We work with
+        you to make you happy.
+      </p>
+      <p class="mt-3">
+        5.<b> Affordable: </b>All our clothing are made by us at our facilities in Bangalore. You can see a video here.
+        We source our fabrics directly from the mills. There are no middle-men anywhere in the chain. So no big markups
+        are added. You thus get the best value possible.
+      </p>
+      <p class="prm">
+        Premium Clothing & personalized service<br>
+        Hello, we're Luxire. Bangalore, India is our home. We've spent half a decade making clothing for the best
+        dressed men in the world. Founded just five short years ago by Ashish Arya as a rebellion to fast fashion
+        clothing, we bring together classic design and the best in tailoring workmanship to a fulfilling clothing
+        experience: all for an honest price.
+      </p>
+      <p class="mt-4">
+        Buying clothing online can be a challenge, but we re positive you've not had an experience like this.
+      </p>
+      <p class="mt-3">
+        We Know Our Craft<br>
+        Mastery of any discipline is lifelong work. We believe that no matter what your task is, when you work with
+        integrity and devotion, you command respect. To that end, we've created a team of skilled craftsmen, whose
+        decication to quality is second to none. Along with some of the best fabric manufacturers In the business, we
+        bring you the best clothing many can buy.
+      </p>
+      <p class="mt-3">
+        Experienced craftsmen combine skills handed down from generation to generation, boosted by the latest
+        developments In computer-aided manufacturing technology. We believe this combination of old and new world
+        techniques result in the finest and best fitting clothing In the world.
+      </p>
+      <p class="mt-3">
+        Premium Materials<br>
+        We use only the highest grade materials for our clothing, threads. Interlinings, natural buttons, ensuring the
+        sharpest look and most comfortable fit. Each garment is hand finished, each aspect is quality checked before
+        being shipped to you. While most brands leave these to processes, we do it all by hand, it's standard on
+        everything we make.
+      </p>
+      <p class="mt-3">
+        Each shirt is made with care to give you comfort of wear. There arc over 200 individual processes brought
+        together to complete each pair of pants. We've spent countless hours in our studio, working together with the
+        craftsmen to ensure the final product is to your specification.
+      </p>
+      <p class="mt-3">
+        We Are Tailors<br>
+        We're inspired by small details that you want to make your clothing work for you. We are intrigued by small
+        points that cause you any discomfort or leave you less than overjoyed. We find solutions.
+      </p>
+      <p class="mt-3">
+        Every one of our clients needs are reviewed by a real tailors who makes final clothing and uses his judgements
+        before finishing your clothing. Clothing for men have never been made with this level of precision ever before.
+      </p>
+    </div>
+    <div class="row pb-3 mb-2 mt-5 wd">
+      <div class="col-sm-12">
+        <div class="row detailer">
+          <div class="col-6 col-sm-4 col-md-3">
+            <img src="../images/alwaysship.jpeg" />
+            <p style="display: inline-block;">Ships<br><small>In 3 days</small></p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-2 mt-2">
+            <img src="../images/truck.jpeg" />
+            <p style="display: inline-block;">Truck<br><small>In Stock</small></p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-2 mt-2">
+            <img src="../images/tailor.jpeg" />
+            <p style="display: inline-block;">Tailor<br><small>Made</small></p>
+          </div>
+          <div class="col-6 col-sm-6 col-md-2 mt-2">
+            <img src="../images/fabric.jpeg" />
+            <p style="display: inline-block;">Natural<br><small>Fabrics</small></p>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-3 mt-2" style="text-align: center;">
+            <img src="../images/shipping.jpeg" />
+            <p style="display: inline-block;">Shipping<br><small>World-wide</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+
+    <div class="row infor">
+      <div class="col-sm-12">
+        <div class="row mgn">
+          <div class="col-sm-4 mt-2">
+            <div class="you">
+              <h6>Made for you</h6>
+              <p>Every clothing made to fit only you. We make it to your measurements and your style preference.</p>
+            </div>
+          </div>
+          <div class="col-sm-4 mt-2">
+            <div class="you">
+              <h6>Guaranteed Fit</h6>
+              <p>If you are unhappy with the fit, we will alter/remake it for you, at no extra cost.</p>
+            </div>
+          </div>
+          <div class="col-sm-4 mt-2">
+            <div class="you">
+              <h6>Natural Fabrics from Italy</h6>
+              <p>Wool, cotton, linen, silk - Luxire believes in natural fibers. We source our fabrics from the best
+                mills in Italy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="row mt-4 ftr wd">
+      <div class="col-sm-3 logo-ftr">
+        <img src="../images/Luxire_logo_bottom.webp" class="d-block" style="width: 90%" />
+        <br />
+        <a href="our_story.html" class="story">Our story</a>
+        <a href="Shipping&Returns.html">Shipping & Returns</a>
+        <a href="Quality&Satisfaction.html">Quality & Satisfaction</a>
+        <a href="Custome_fit.html">Custom-Fit</a>
+      </div>
+      <div class="col-sm-2">
+        <h5>Information</h5>
+        <br />
+        <a href="Search.html">Search</a>
+        <a href="about_us.html">About Us</a>
+        <a href="privacy_policy.html">Privacy Policy</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="how_to_order.html">How to Order</a>
+        <a href="Custome_fit.html">Made-To-Fit</a>
+        <a href="terms_of_services.html">Terms of Service</a>
+        <a href="refund_policy.html">Refund policy</a>
+      </div>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-3">
+        <h5>Measure</h5>
+        <br />
+        <a href="pant_measurement.html">Pant Measurements</a>
+        <a href="body_measure_pant.html">Body Measurement - Pants</a>
+        <a href="measure_ur_shirt.html">Measure your Shirt</a>
+        <a href="body_measure_shirt.html">Body Measurement - Shirt</a>
+        <a href="send_measure_sample.html">Send Measurement Sample</a>
+        <a href="pant_size_chart.html">Pant Size Chart</a>
+        <a href="shirt_size_chart.html">Shirt Size Chart</a>
+      </div>
+      <div class="col-sm-2">
+        <h5>Styles</h5>
+        <br />
+        <a href="shirts.html">Shirts</a>
+        <a href="pants.html">Pants</a>
+        <a href="our_collars.html">Our Collars</a>
+        <a href="all_shirts.html">All Shirts</a>
+        <a href="all_pants.html">All Pants</a>
+      </div>
+    </div>
+  <hr>
+    <div class="row cpy">
+      <div class=" col-sm-10 col-md-10 text-center bottom_text">
+        <p class="bottom_text ml-2">@2023,<a href="" class="bottom_links">Luxire Custom Clothing.</a>Trademarks and
+          brands are the
+          properly of their respective owners.</p>
+      </div>
+      <p class="col-sm-2">
+        <i class="fa-brands fa-twitter"></i><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i>
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
